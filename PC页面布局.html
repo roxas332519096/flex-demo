@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PC页面布局</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        header,footer{
+            height: 100px;
+            background: #ddd;
+        }
+        .content{
+            display: flex;
+        }
+        .content > aside {
+            width: 120px;
+            background: #444;
+        }
+        .content > main {
+            height: 400px;
+            flex: 1;
+            background: red;
+        }
+        .content > nav {
+            width: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <header>头部</header>
+    <div class="content">
+        <aside>边栏</aside>
+        <main>主要内容</main>
+        <nav>导航栏</nav>
+    </div>
+    <footer>底部</footer>
+</body>
+</html>
